@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéStation | How to Play</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="readingProgressBar"></div>
+
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-info" href="index.html">POKÉSTATION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cards.html"><i class="fas fa-layer-group me-1"></i>Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="deck.html"><i class="fas fa-chess-board me-1"></i>Deck Builder</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-store me-1"></i>Shop & Info
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="shop.html">Booster Shop</a>
+              <a class="dropdown-item" href="how2play.html">How to Play</a>
+              <a class="dropdown-item" href="news.html">News & Updates</a>
+              <div class="dropdown-divider" style="border-color: rgba(255,255,255,0.1);"></div>
+              <a class="dropdown-item" href="contact.html">Contact Us</a>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <label class="theme-switch ms-2">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 mb-5">
+
+    <div class="card-custom text-center mb-5" style="padding:40px 20px;">
+      <h1 class="text-info"><i class="fas fa-book-open me-3"></i>Trainer's Guide</h1>
+      <p class="lead mt-3 mb-0 text-body-soft">Master the rules of the Pokémon Trading Card Game and prepare for battle.</p>
+    </div>
+
+    <!-- HOW TO WIN -->
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <h2>How to Win</h2>
+        <p class="text-muted-soft">You can win a Pokémon TCG match in one of three ways:</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center">
+          <i class="fas fa-trophy fa-3x mb-3" style="color:var(--neon);"></i>
+          <h4 class="text-info">Take All Prize Cards</h4>
+          <p class="mb-0 text-body-soft">Every time you Knock Out an opponent's Pokémon, you take a Prize card. Take all 6 to win!</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center">
+          <i class="fas fa-skull-crossbones fa-3x mb-3" style="color:var(--neon);"></i>
+          <h4 class="text-info">Knock Out All Pokémon</h4>
+          <p class="mb-0 text-body-soft">If your opponent's Active Pokémon is Knocked Out and they have no Benched Pokémon to replace it, you win.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center">
+          <i class="fas fa-layer-group fa-3x mb-3" style="color:var(--neon);"></i>
+          <h4 class="text-info">Deck Out</h4>
+          <p class="mb-0 text-body-soft">If your opponent has no cards left in their deck at the start of their turn, you win by default.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-hr my-5">
+
+    <!-- GAME SETUP -->
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <h2>Game Setup</h2>
+        <p class="text-muted-soft">Before your first turn, both players follow these steps in order.</p>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card-custom text-center h-100">
+          <div class="step-number">1</div>
+          <h5 class="text-info">Build Your Deck</h5>
+          <p class="text-body-soft mb-0">Your deck must have <strong style="color:#22d3ee;">exactly 60 cards</strong>. You can include up to <strong style="color:#22d3ee;">4 copies</strong> of any single card (except Basic Energy).</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card-custom text-center h-100">
+          <div class="step-number">2</div>
+          <h5 class="text-info">Shuffle & Draw</h5>
+          <p class="text-body-soft mb-0">Shuffle your deck thoroughly, then each player draws <strong style="color:#22d3ee;">7 cards</strong> as their opening hand.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card-custom text-center h-100">
+          <div class="step-number">3</div>
+          <h5 class="text-info">Place Prize Cards</h5>
+          <p class="text-body-soft mb-0">Each player takes the top <strong style="color:#22d3ee;">6 cards</strong> from their deck and places them face-down as Prize Cards.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card-custom text-center h-100">
+          <div class="step-number">4</div>
+          <h5 class="text-info">Place Your Pokémon</h5>
+          <p class="text-body-soft mb-0">Play one Basic Pokémon face-down as your <strong style="color:#22d3ee;">Active Pokémon</strong>, then place up to <strong style="color:#22d3ee;">5 more</strong> on your Bench.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-hr my-5">
+
+    <!-- TURN STRUCTURE + VIDEO -->
+    <div class="row align-items-start mb-5">
+      <div class="col-md-6 mb-4">
+        <h2 class="mb-4 text-info">Turn Structure</h2>
+        <div class="card-custom p-4 mb-3">
+          <div class="step-number">1</div>
+          <h5>Draw a Card</h5>
+          <p class="mb-0 text-body-soft">You must draw a card at the beginning of your turn. If you can't draw, you lose the game.</p>
+        </div>
+        <div class="card-custom p-4 mb-3">
+          <div class="step-number">2</div>
+          <h5>Take Actions</h5>
+          <p class="mb-0 text-body-soft">Put Basic Pokémon on the Bench, evolve Pokémon, attach 1 Energy card, play Trainer cards, and use Abilities.</p>
+        </div>
+        <div class="card-custom p-4">
+          <div class="step-number">3</div>
+          <h5>Attack</h5>
+          <p class="mb-0 text-body-soft">Use one of your Active Pokémon's attacks. This immediately ends your turn.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h2 class="mb-4 text-info">Official Tutorial</h2>
+        <div class="card-custom p-3 text-center">
+          <iframe width="100%" height="350" src="https://www.youtube.com/embed/E7Mg2S1Lm6A" title="How to Play Pokémon TCG" frameborder="0" allowfullscreen></iframe>
+          <p class="mt-3 mb-0 fw-bold text-info">Watch the 5-Minute Quick Start Guide</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-hr my-5">
+
+    <!-- ENERGY & ATTACKING + THE BENCH -->
+    <div class="row mb-5 align-items-start">
+      <div class="col-md-6 mb-4">
+        <h2 class="text-info mb-4">Energy & Attacking</h2>
+        <div class="card-custom mb-3">
+          <h5><i class="fas fa-bolt me-2" style="color:#fbbf24;"></i>Attaching Energy</h5>
+          <p class="mb-0 text-body-soft">You may attach <strong style="color:#22d3ee;">1 Energy card per turn</strong> from your hand to any of your Pokémon.</p>
+        </div>
+        <div class="card-custom mb-3">
+          <h5><i class="fas fa-fist-raised me-2" style="color:#f472b6;"></i>Using an Attack</h5>
+          <p class="mb-0 text-body-soft">To attack, your Active Pokémon must have the required Energy attached. Attacking immediately <strong style="color:#22d3ee;">ends your turn</strong>.</p>
+        </div>
+        <div class="card-custom">
+          <h5><i class="fas fa-shield-alt me-2" style="color:#818cf8;"></i>Weakness & Resistance</h5>
+          <p class="mb-0 text-body-soft">Some Pokémon take <strong style="color:#f87171;">extra damage</strong> (Weakness) and <strong style="color:#4ade80;">reduced damage</strong> (Resistance) from certain types.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h2 class="text-info mb-4">The Bench</h2>
+        <div class="card-custom mb-3">
+          <h5><i class="fas fa-users me-2" style="color:#22d3ee;"></i>What is the Bench?</h5>
+          <p class="mb-0 text-body-soft">Your Bench holds up to <strong style="color:#22d3ee;">5 Pokémon</strong> in reserve. Only your Active Pokémon can attack or be attacked directly.</p>
+        </div>
+        <div class="card-custom mb-3">
+          <h5><i class="fas fa-exchange-alt me-2" style="color:#4ade80;"></i>Retreating</h5>
+          <p class="mb-0 text-body-soft">Once per turn, swap your Active Pokémon with a Benched one by paying its <strong style="color:#22d3ee;">Retreat Cost</strong> in Energy.</p>
+        </div>
+        <div class="card-custom">
+          <h5><i class="fas fa-skull me-2" style="color:#f87171;"></i>Knock Out</h5>
+          <p class="mb-0 text-body-soft">When a Pokémon's HP reaches 0 it is Knocked Out. The opponent takes <strong style="color:#22d3ee;">1 Prize Card</strong> (or 2 for EX/GX/V).</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-hr my-5">
+
+    <!-- CARD TYPES -->
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <h2>Types of Cards</h2>
+        <p class="text-muted-soft">Every card in your deck belongs to one of three categories.</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center h-100">
+          <i class="fas fa-dragon fa-2x mb-3" style="color:#4ade80;"></i>
+          <h5 class="text-info">Pokémon Cards</h5>
+          <p class="text-body-soft mb-0">
+            The creatures you battle with. Basic Pokémon can be played directly;
+            Stage 1 and Stage 2 evolve from previous forms.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center h-100">
+          <i class="fas fa-scroll fa-2x mb-3" style="color:#818cf8;"></i>
+          <h5 class="text-info">Trainer Cards</h5>
+          <p class="text-body-soft mb-0">
+            Items, Supporters, and Stadiums. You can play
+            <strong style="color:#22d3ee;">1 Supporter</strong> per turn.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card-custom text-center h-100">
+          <i class="fas fa-bolt fa-2x mb-3" style="color:#fbbf24;"></i>
+          <h5 class="text-info">Energy Cards</h5>
+          <p class="text-body-soft mb-0">
+            Fuel for your attacks. Basic Energy provides one type; Special Energy provides extra effects.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BUTTON -->
+    <div class="text-center mb-5">
+      <a href="deck.html" class="btn btn-outline-info px-5 py-3 fw-bold">
+        Ready? Build Your Deck Now!
+      </a>
+    </div>
+
+    <!-- QUIZ SECTION -->
+    <div class="container" id="quizSection">
+      <div class="quiz-box shadow-lg">
+        
+        <div class="quiz-counter" id="qCounter">
+          Question 1 of 5
+        </div>
+
+        <h4>
+          <i class="fas fa-brain me-2"></i>
+          Test Your Knowledge
+        </h4>
+
+        <div id="qMain">
+          <div class="q-text" id="qText"></div>
+          <div id="qOpts"></div>
+          <div class="quiz-feedback" id="qFeedback"></div>
+          <button class="btn-quiz-next" id="btnNext">Next →</button>
+        </div>
+
+        <div class="quiz-result" id="qResult">
+          <div class="score" id="qScore"></div>
+          <p id="qMsg"></p>
+          <button class="btn-quiz-restart" id="btnRestart">↺ Try Again</button>
+        </div>
+
+      </div>
+    </div>
+
+  <footer class="text-center p-4 mt-5">© 2026 PokéStation</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

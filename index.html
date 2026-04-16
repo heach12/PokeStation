@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéStation | Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="pokemon-ball"></div>
+      <h2 class="loading-text">POKÉSTATION INITIALIZING...</h2>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="index.html">POKÉSTATION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cards.html"><i class="fas fa-layer-group me-1"></i>Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="deck.html"><i class="fas fa-chess-board me-1"></i>Deck Builder</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+              <i class="fas fa-store me-1"></i>Shop &amp; Info
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="shop.html">Booster Shop</a>
+              <a class="dropdown-item" href="how2play.html">How to Play</a>
+              <a class="dropdown-item" href="news.html">News &amp; Updates</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="contact.html">Contact Us</a>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <label class="theme-switch ms-2">
+              <input type="checkbox" id="themeToggle">
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+
+    <div class="hero-welcome mb-5 text-center" data-aos="zoom-in">
+      <h1 class="display-3 home-hero-title mb-2">Welcome to PokéStation</h1>
+      <p class="lead text-white-50 mb-4">The ultimate hub for Pokémon TCG Trainers. Build, Browse, and Battle.</p>
+      <div class="d-flex gap-3 justify-content-center float-ui">
+        <a href="cards.html" class="btn btn-home-cta btn-lg fw-bold px-5 shadow">Browse Cards</a>
+        <a href="deck.html" class="btn btn-outline-light btn-lg fw-bold px-5">Build a Deck</a>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5 justify-content-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card-custom banner-card d-flex flex-row align-items-center p-4 position-relative">
+          <i class="fas fa-rocket text-info me-4 fa-3x"></i>
+          <div>
+            <h4 class="mb-1 fw-bold text-white">New Version 2.0</h4>
+            <span class="text-white-50">Major database update available now!</span>
+          </div>
+          <a href="news.html" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card-custom banner-card d-flex flex-row align-items-center p-4 position-relative">
+          <i class="fas fa-trophy text-warning me-4 fa-3x"></i>
+          <div>
+            <h4 class="mb-1 fw-bold text-white">Limited Rewards!</h4>
+            <span class="text-white-50">Earn points to unlock rare card mats.</span>
+          </div>
+          <a href="shop.html" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center g-4 mb-5">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-custom position-relative h-100">
+          <div class="feature-icon mb-3 text-info"><i class="fas fa-search fa-3x"></i></div>
+          <h3 class="fw-bold text-white">Card Database</h3>
+          <p class="text-white-50 small">Access thousands of cards via official TCG API.</p>
+          <a href="cards.html" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-custom position-relative h-100">
+          <div class="feature-icon mb-3 text-warning"><i class="fas fa-tools fa-3x"></i></div>
+          <h3 class="fw-bold text-white">Deck Builder</h3>
+          <p class="text-white-50 small">Create your winning 60-card deck and save it to profile.</p>
+          <a href="deck.html" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-custom position-relative h-100 contact-pulse">
+          <div class="feature-icon mb-3 text-success"><i class="fas fa-envelope-open-text fa-3x"></i></div>
+          <h3 class="fw-bold text-white">Contact Us</h3>
+          <p class="text-white-50 small">Have questions? Reach out to Group 4.</p>
+          <a href="contact.html" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5" data-aos="fade-up">
+      <div class="col-12">
+        <h2 class="text-white fw-bold mb-4 border-start border-info border-4 ps-3">Community Statistics</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom p-4 h-100">
+              <img src="https://images.pokemontcg.io/swsh11/177_hires.png" class="img-fluid rounded mb-3 shadow-sm" style="max-height: 180px;" alt="Card">
+              <h6 class="text-white mb-1 fw-bold">Top Voted Deck</h6>
+              <span class="text-info small">"Shadow Rider Blitz"</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom p-4 h-100 d-flex flex-column justify-content-center align-items-center">
+              <div class="mb-3"><i class="fas fa-users fa-3x text-info"></i></div>
+              <h2 class="text-white fw-bold">1,240</h2>
+              <p class="text-white-50 mb-0">Active Trainers</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom p-4 h-100 d-flex flex-column justify-content-center align-items-center">
+              <div class="mb-3"><i class="fas fa-layer-group fa-3x text-warning"></i></div>
+              <h2 class="text-white fw-bold">450+</h2>
+              <p class="text-white-50 mb-0">Saved Decks</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom p-4 h-100 d-flex flex-column justify-content-center align-items-center">
+              <div class="mb-3"><i class="fas fa-calendar-check fa-3x text-success"></i></div>
+              <h6 class="text-white mb-1 fw-bold">Weekly Event</h6>
+              <span class="text-success small">Tournament Live!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-custom mt-5 p-5 text-center position-relative" data-aos="flip-up"
+         style="border-color: #00f2ff; background: linear-gradient(135deg, rgba(0, 242, 255, 0.1) 0%, transparent 100%);">
+      <h2 class="text-info mb-3 fw-bold">Start Your Journey Today</h2>
+      <p class="lead mb-4 text-white">New to the game? Check out our master guide.</p>
+      <a href="how2play.html" class="btn btn-home-cta px-5 py-3 fw-bold shadow-sm">
+        Learn The Rules <i class="fas fa-book-open ms-2"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="text-center p-5 mt-5 border-top border-secondary">
+    <p class="text-muted mb-0">© 2026 PokéStation | Group 4</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>

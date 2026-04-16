@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéStation | Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-info" href="index.html">POKÉSTATION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cards.html"><i class="fas fa-layer-group me-1"></i>Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="deck.html"><i class="fas fa-chess-board me-1"></i>Deck Builder</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-store me-1"></i>Shop & Info
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="shop.html">Booster Shop</a>
+              <a class="dropdown-item" href="how2play.html">How to Play</a>
+              <a class="dropdown-item" href="news.html">News & Updates</a>
+              <div class="dropdown-divider" style="border-color: rgba(255,255,255,0.1);"></div>
+              <a class="dropdown-item" href="contact.html">Contact Us</a>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <label class="theme-switch ms-2">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-4">
+    <div class="hero-banner" style="background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.pokemontcg.io/base1/4_hires.png');">
+      <h1 class="display-4 fw-bold">Contact & Booster Packs</h1>
+      <p class="lead">Explore packs & reach out to the PokéStation team</p>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <h2 class="mb-4 text-info"><i class="fas fa-box-open me-2"></i>Featured Booster Packs</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="booster-card p-3">
+          <img src="https://images.pokemontcg.io/base1/pack.png" alt="Base Set" class="img-fluid">
+          <h5 class="mt-2">Base Set Pack</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="booster-card p-3">
+          <img src="https://images.pokemontcg.io/swsh7/pack.png" alt="Evolving Skies" class="img-fluid">
+          <h5 class="mt-2">Evolving Skies</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="booster-card p-3">
+          <img src="https://images.pokemontcg.io/sv1/pack.png" alt="Scarlet & Violet" class="img-fluid">
+          <h5 class="mt-2">Scarlet & Violet</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-5 mb-4">
+        <div class="info-card p-4 h-100">
+          <h4 class="text-info mb-3">Contact Info</h4>
+          <p><i class="fas fa-envelope me-2 text-info"></i>Email: pokemontcgworld@gmail.com</p>
+          <p><i class="fas fa-phone me-2 text-info"></i>Phone: 010-12345678</p>
+          <p><i class="fas fa-map-marker-alt me-2 text-info"></i>Location: Malaysia</p>
+          <p>
+            <i class="fab fa-youtube me-2 text-danger"></i>Official Account:
+            <a href="https://www.youtube.com/@Pok%C3%A9monAsiaENG" target="_blank">Pokémon Asia ENG</a>
+          </p>
+          <p>
+            <i class="fab fa-instagram me-2" style="color:#E1306C;"></i>Official Instagram:
+            <a href="https://www.instagram.com/pokemontcg/" target="_blank" class="text-info">Pokémon TCG</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-7 mb-4">
+        <div class="info-card p-4 h-100">
+          <h4 class="text-info mb-3">Send Message</h4>
+          <form id="contactForm">
+            <input type="text" id="name" class="form-control mb-3 bg-dark text-white border-secondary" placeholder="Name" required>
+            <input type="email" id="email" class="form-control mb-3 bg-dark text-white border-secondary" placeholder="Email" required>
+            <textarea id="message" class="form-control mb-3 bg-dark text-white border-secondary" rows="4" placeholder="Message" required></textarea>
+            <button class="btn btn-primary w-100 py-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-5">
+    <div class="info-card p-4">
+      <h4 class="text-info mb-3">Scarlet & Violet Showcase</h4>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/E7Mg2S1Lm6A" allowfullscreen style="border-radius:10px;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast-box">Message saved locally ✅</div>
+
+  <footer class="text-center p-4 mt-5">© 2026 PokéStation</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
